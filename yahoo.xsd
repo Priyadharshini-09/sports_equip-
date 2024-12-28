@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:element name="registration">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="person" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Personal_details">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="name" type="xs:string" />
+<xs:element name="gender" type="xs:string" />
+<xs:element name="DOB" type="xs:date" />
+ 
+
+
+
+
+<xs:element name="country" type="xs:string" />
+<xs:element name="language" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="id_and_passwords">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="yahooid_and_email" type="xs:string" />
+<xs:element name="password" type="xs:string" />
+<xs:element name="Re_type_password" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="forget_id_or_password">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="alternate_Email_id" type="xs:string" />
+<xs:element name="secret_question1" type="xs:string" />
+<xs:element name="answer1" type="xs:string" />
+<xs:element name="secret_question2" type="xs:string" />
+<xs:element name="answer2" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+ 
+
+
+
+
+</xs:schema>

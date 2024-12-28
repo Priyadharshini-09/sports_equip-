@@ -1,0 +1,438 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+
+}
+body{
+    color: black;
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gray;
+    padding: 30px 5%;
+    font-weight: 800;
+    z-index: 999;
+}
+
+.logo a{
+    color: white;
+    font-size: 42px;
+
+}
+.navlist a{
+    margin-right: 20px;
+    color: white;
+    font-size: 20px;
+    transition: .3s;
+
+}
+.navlist a:hover{
+    color:black;
+}
+.bar{
+    display:none;
+}
+.bar i{
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+.home{
+    padding-top: 100px;
+}
+
+.hero::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+height: 700px;
+background-color: #111;
+opacity: .8;
+z-index: 1;
+}
+
+.home-1{
+    width: 20%;
+    height: 550px;
+    background: url("images/2.jpg");
+}
+.home-2{
+    width: 20%;
+    height: 650px;
+    background: url("images/110.jpg");
+}
+.home-3{
+    width: 20%;
+    height: 750px;
+    background: url("images/22.jpg");
+}
+
+
+
+
+
+.home-text{
+    position: absolute;
+    top:20%;
+    left:10%;
+    transform: translate(-5%,-5%);
+    text-align: center;
+    color: white;
+    z-index:2;
+}
+.home-texts{
+    position: absolute;
+    top:20%;
+    left:50%;
+    transform: translate(-5%,-5%);
+    text-align: center;
+    color: white;
+    z-index:3;
+}
+.homes-text{
+    position: absolute;
+    top:20%;
+    left:15%;
+    transform: translate(-5%,-5%);
+    text-align: center;
+    color: white;
+    z-index:4;
+}
+.home-text h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+
+}
+.home-texts h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+
+}
+.homes-text h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+
+}
+
+.home-text a{
+    padding: 15px 35px;
+    padding: 20px;
+    font-size: 19px;
+    color:#fff;
+    background-color: orange;
+    margin-right:20px;
+    display: inline-block;
+}
+.home-texts a{
+    padding: 15px 35px;
+    padding: 20px;
+    font-size: 19px;
+    color:#fff;
+    background-color: orange;
+    margin-right:20px;
+    display: inline-block;
+}
+.homes-text a{
+    padding: 15px 35px;
+    padding: 20px;
+    font-size: 19px;
+    color:#fff;
+    background-color: orange;
+    margin-right:20px;
+    display: inline-block;
+}
+.home-text a:nth-child(2){
+    color: #111;
+    background-color: #fff;
+}
+.home-texts a:nth-child(2){
+    color: #111;
+    background-color: #fff;
+}
+.homes-text a:nth-child(2){
+    color: #111;
+    background-color: #fff;
+}
+
+.container{
+    padding: 120px 5%;
+}
+
+.about-content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+
+.about-text h3{
+    font-size: 24px;
+    color:orange;
+    margin-bottom: 10px;
+}
+.about-text p{
+    color:#333;
+    margin-bottom: 10px;
+}
+
+
+.about-text h2{
+    margin-bottom: 10px;
+}
+
+span{
+    color: orange;
+}
+.about-img img{
+    width:35%;
+}
+
+.about-icon-content{
+    display:flex;
+}
+
+.about-content-col{
+    margin: 30px;
+border:double;
+padding: 30px;
+text-align: center;
+}
+
+.about-content-col i{
+    color: orange;
+    margin-bottom: 10px;
+    font-size:30px;
+
+}
+
+.about-content-col h4{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.products-content-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,auto));
+    gap:20px;
+
+}
+
+.products-content-row img{
+    width: 100%;
+}
+
+.products-content-col{
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.12);
+    padding: 20px;
+
+}
+.products-text{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.products-text h3{
+    font-size: 24px;
+}
+.products-text .stars i{
+    color: orange;
+}
+.products-details h4{
+    margin-bottom:10px;
+}
+products-details p{
+    color: gray;
+    margin-bottom: 10px;
+}
+    
+.products-btn a{
+    padding: 12px 28px;
+    background: #333;
+    color: white;
+    margin-right: 10px;
+    display: inline-block;
+}
+.products-btn a:nth-child(2){
+    color: orange;
+}
+
+
+.contact-row{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+}
+
+.iframe{
+    width:500px;
+    max-width: 100%;
+
+}
+.input{
+    display:flex;
+    
+
+}
+.input input{
+    margin-right: 50px;
+}
+
+.form input.textarea{
+    padding: 2px;
+    width: 10%;
+    margin-bottom: 1px;
+    border:1px solid gray;
+    
+}
+.textarea{
+    resize:none;
+    width:25px;
+}
+
+.form input[type="submit"]{
+    background-color:black;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+* {
+    box-sizing: border-box
+}
+body {
+    font-family: 'Segoe UI', Tahoma,
+        Geneva, Verdana, sans-serif;
+}
+/* Styling the form input fields */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    font-size: 28px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+label {
+    font-size: 15px;
+}
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+/* Style the Sign Up button */
+button {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: gray;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+/* To change opacity of button upon hovering */
+button:hover {
+    opacity: 1;
+}
+.formContainer {
+    padding: 16px;
+}
+.formContainer p {
+    font-size: 28px;
+}
+#check {
+    margin-bottom: 15px;
+}
+
+.footer-container{
+    background-color:gray;
+    color: #fff;
+    text-align: center;
+}
+@media(max-width: 1017px){
+    .home-text h1{
+        font-size:30px;
+    }
+}
+ 
+@media(max-width: 979px) {
+.about-content{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    
+}
+
+.about-icon-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+}
+
+@media (max-width:779px) {
+    .navlist{
+        position: absolute;
+        top:100%;
+        left:0;
+        width:0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: gray;
+        padding: 20px;
+    }
+
+}
+.navlist.open{
+
+    width: 100%;
+}
+
+.navlist a{
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.bar{
+    display: none;
+}
+.a{
+    text-align: center;
+    font-weight:500;
+    padding: 12px 300px;
+    background: #333;
+    color: white;
+    margin-right: 100px;
+    display: inline-block;
+    
+
+}
+    
+
+
+
